@@ -1,9 +1,12 @@
 body {
   background-color: #0F0B30;
   font-family: 'Poppins', sans-serif;
+}
+
+header {
   background-image: url(/./images/background.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 b {
@@ -42,15 +45,35 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 26px 91px 145px;
+  margin: 0px auto 145px;
+  padding: 26px 20px 0px;
+}
+
+@media (max-width: 500px) {
+  .header__menu-container {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
 }
 
 .header__menu-ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 640px;
+  max-width: 640px;
+  flex-wrap: wrap;
+  gap: 0px 20px;
   padding: 0px 20px;
+}
+
+@media (max-width: 500px) {
+  .header__menu-ul {
+    gap: 0px;
+    max-width: 160px;
+    color:rgb(0, 251, 255);
+    margin-top: 0px;
+  }
 }
 
 .login-register {
@@ -75,6 +98,13 @@ section {
   border-radius: 55px;
   padding: 6px 22px;
 }
+
+@media (max-width: 500px) {
+  .register {
+    background: rgb(18, 35, 79);
+  }
+}
+
 
 
 .border-gradient {
@@ -131,6 +161,7 @@ section {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding: 0px 20px;
 }
 
 .ai {
@@ -139,6 +170,12 @@ section {
   font-size: 45px;
   line-height: 67px;
   margin: 0px;
+}
+
+@media (max-width:374px) {
+  .marketing {
+    font-size: 32px;
+  }
 }
 
 .gradient {
@@ -192,9 +229,27 @@ section {
 .marketing {
   font-weight: 700;
   font-size: 98px;
-  line-height: 147px;
+  line-height: 140%;
   margin: 0px;
   padding: 0px 20px;
+}
+
+@media (max-width:600px) {
+  .marketing {
+    font-size: 80px;
+  }
+}
+
+@media (max-width:500px) {
+  .marketing {
+    font-size: 58px;
+  }
+}
+
+@media (max-width:374px) {
+  .marketing {
+    font-size: 47px;
+  }
 }
 
 .ai-paragraph {
@@ -253,14 +308,51 @@ section {
   margin: 0px auto;
   scale: 100%;
   margin-bottom: 150px;
+  padding: 0px 20px;
+}
+
+@media (max-width: 1049px) {
+  .robot-text {
+  flex-wrap: wrap;
+  justify-content: center;
+  }
 }
 
 .robot-paragraph {
   font-weight: 700;
   font-size: 60px;
-  line-height: 90px;
+  line-height: 140%;
   margin: 0px;
-  padding: 0px 20px 0px 60px;
+}
+
+@media (max-width: 767px) {
+  .robot-paragraph {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .robot-paragraph {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 414px) {
+  .robot-paragraph {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 375px) {
+  .robot-paragraph {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .robot-paragraph {
+    font-size: 25px;
+  }
 }
 
 .border-gradient-btn2 {
@@ -326,6 +418,13 @@ section {
   flex-direction: column;
   justify-content: space-between;
   scale: 100%;
+  padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+  .explore-align {
+    align-items: center;
+  }
 }
 
 .btn-text {
@@ -590,7 +689,32 @@ iframe {
 }
 
 .robot-img {
-  padding: 0px 20px;
+  padding: 0px 60px 0px 0px;
+}
+
+@media (max-width: 1049px) {
+  .robot-img {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .robot-img {
+    padding: 0px;
+    width: 430px;
+  }
+}
+
+@media (max-width: 500px) {
+  .robot-img {
+    width: 345px;
+  }
+}
+
+@media (max-width: 374px) {
+  .robot-img {
+    width: 270px;
+  }
 }
 
 .img-name-reviews-align {
@@ -752,7 +876,6 @@ iframe {
 
 footer {
   background-color: #1F1B42;
-  max-width: 1920px;
 }
 
 .footer__container {
